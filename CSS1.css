@@ -33,6 +33,7 @@ header
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /*Menu*/
@@ -50,6 +51,7 @@ nav li
 nav a
 {
     text-decoration: none;
+    color: black;
 }
 
 /*Trait au survol*/
@@ -64,4 +66,106 @@ nav li :hover
 {
     color: #0065FC;
     font-weight: bold;
+}
+
+/*recherche*/
+#barre
+{
+    display: flex;
+}
+
+#map
+{
+    padding: 15px;
+    width: 10px;
+    height: 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#localisation
+{
+    height: 41px;
+    border: none;
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    font-weight: bold;
+}
+
+#bouton
+{
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    width: 120px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+}
+/*comment enlever les bordures noires au clic?*/
+
+/*filtres*/
+#filtre
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*mot filte isolé*/
+#descfiltre
+{
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+/*icone + contenu*/
+.boutoncomplet
+{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    height: 30px;
+    border: 2px #F2F2F2 solid;
+    border-left: none;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.icones
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 33px;
+    height: 33px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px 20px;
+}
+
+.contenu
+{
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/*info logement*/
+#infolog
+{
+    display: flex;
+    align-items: center;
+}
+
+#iconeinfo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px 15px;
 }

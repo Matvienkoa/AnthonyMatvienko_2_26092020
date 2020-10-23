@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Reservia</title>
         <link rel="stylesheet" href="CSS1.css"/>
+        <script src="https://kit.fontawesome.com/b1cc2409d4.js" crossorigin="anonymous"></script>
     </head>
 
     <body>     
@@ -21,31 +22,49 @@
                     </ul>
                 </nav>
             </header>
-            
-            <div id="recherche">
-                       
+                             
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
 
                 <!--Recherche-->
-                <form method="POST" action="traitement.php">
-                    <p>
-                        <label for="localisation"></label>
-                        <input type="text" name="localisation" value="Marseille, France" id="localisation"/>
-                    </p>
-                </form>
+                <div id="barre">
+                <i class="fas fa-map-marker-alt" id="map"></i>              
+                <input type="text" name="localisation" value="   Marseille, France" id="localisation"/>
+                <input type="button" value="Rechercher" id="bouton"/>              
+                </div>
 
                 <!--Filtres-->
-                <p>Filtres</p>
-                <ul>
-                    <li>Economique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux Autorisés</li>
-                </ul>
+            <div id="filtre">
 
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div id="descfiltre">Filtres</div>
+
+                    <div class="boutoncomplet">
+                        <div class="icones"><i class="fas fa-money-bill-wave"></i></div>
+                        <div class="contenu">Economique</div>
+                    </div>
+
+                    <div class="boutoncomplet">
+                        <div class="icones"><i class="fas fa-child"></i></div>
+                        <div class="contenu">Familial</div>
+                    </div>
+
+                    <div class="boutoncomplet">
+                        <div class="icones"><i class="fas fa-heart"></i></div>
+                        <div class="contenu">Romantique</div>
+                    </div>
+                        
+
+                    <div class="boutoncomplet">
+                        <div class="icones"><i class="fas fa-dog"></i></div>
+                        <div class="contenu">Animaux Autorisés</div>
+                    </div>
             </div>
+
+                <div id="infolog">
+                    <div id="iconeinfo"><i class="fas fa-info"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+
 
             <section>
                 <div id="hebergements">
