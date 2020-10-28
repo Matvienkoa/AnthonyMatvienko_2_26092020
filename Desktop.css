@@ -1,0 +1,462 @@
+/*Police perso*/
+@font-face
+{
+    font-family: 'Raleway-Medium' ;
+    src: url('polices/Raleway-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*éléments principaux de la page*/
+body
+{
+    font-family: 'Raleway-Regular', Arial, Helvetica, sans-serif;
+    width: 960px;
+    margin: auto;
+    font-size: small;
+}
+
+header, main, #section1, #section2
+{
+    width: 95%;
+    margin: auto;
+    font-size: small;
+}
+
+h1, h2
+{
+    font-weight: bold;
+    font-size: medium;
+}
+
+#logo
+{
+    width: 80px;
+}
+
+/*Liens*/
+#section1 a, #section2 a
+{
+    outline: none;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+
+/*Header*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/*Menu*/
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 50px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*Trait au survol*/
+nav li :hover
+{
+    border-top: 2px #0065FC solid;
+    padding-top: 20px;
+    color: #0065FC;
+}
+
+#register
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/*recherche*/
+#search
+{
+    display: flex;
+}
+
+#map
+{
+    padding: 15px;
+    width: 10px;
+    height: 15px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#localisation
+{
+    height: 41px;
+    border: none;
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    font-weight: bold;
+}
+
+#button
+{
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    width: 120px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+}
+
+/*effet boutons recherche enlevé*/
+input#button:focus
+{
+    outline:none;
+}
+
+input#localisation:focus
+{
+    outline:none;
+}
+
+/*filtres*/
+#filter
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*mot filtre isolé*/
+#descfilter
+{
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+/*icone + contenu*/
+.completebutton
+{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    height: 30px;
+    border: 2px #F2F2F2 solid;
+    border-left: none;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.icones
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 33px;
+    height: 33px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px 20px;
+}
+
+.content
+{
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/*effet survol filtres*/
+.completebutton:hover .icones 
+{
+    color: white;
+}
+
+.completebutton:hover .content
+{
+    color: #0065FC;
+}
+
+/*info nbre logement*/
+#infolog
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#iconeinfo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 15px 15px;
+}
+
+/*section 1*/
+/*general*/
+#section1
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; 
+}
+
+/*gestion des figures globale*/
+
+figure
+{
+    overflow: hidden;
+    margin: auto;
+}
+
+#section1 figure img
+{
+    object-fit: cover;
+    object-position: center;
+    height: 80px;
+}
+
+.titlefigure
+{
+    font-weight: bold;
+}
+
+/*hebergements*/
+#housing
+{
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#housing h1
+{
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#more
+{
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+/*cartes section hebergements*/
+#housing .cards
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#housing figure
+{
+display: flex;
+flex-direction: column;
+background-color: white;
+border: 4px white solid;
+border-radius: 20px 20px 20px 20px;
+height: 130px;
+width: 150px;
+margin-bottom: 20px;
+}
+
+/*figcaption*/
+#housing figcaption
+{
+    display: flex;
+    flex-direction: column;
+    font-size:0.8em ;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+#housing .price
+{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.price2
+{
+    font-weight: bold;
+}
+
+.star
+{
+    color: #F2F2F2;
+}
+
+.starblue
+{
+    color: #0065FC;
+}
+
+/*Aside*/
+#popular
+{
+    background-color: #F2F2F2;
+    width: 270px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#popular h1
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+}
+
+/*cartes Aside*/
+#popular figure
+{
+    display: flex;
+    height: 80px;
+    width: 220px;
+    background-color: white;
+    border: 4px white solid;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 30px;
+}
+
+#popular img
+{
+    width: 80px;
+}
+
+/*figcaption Aside*/
+#popular figcaption
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: 0.8em;
+}
+
+#popular .star
+{
+    margin-top: 20px;
+}
+
+#popular .price
+{
+    margin-top: 3px;
+}
+
+/*Section Activités*/
+/*Général*/
+
+#section2
+{
+    margin-bottom: 50px;
+}
+
+#activity
+{
+    display: flex;
+    justify-content: space-between
+}
+
+.bloc1, .bloc2, .bloc3, .bloc4
+{
+    width: 23%;
+    height: 300px;
+}
+
+.figbloc2, .figbloc4
+{
+    height: 47%;
+}
+
+/*Blocs*/
+.bloc1, .bloc3, .figbloc2, .figbloc4
+{
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 9px #F2F2F2;
+}
+
+.bloc2, .bloc4
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bloc2 img, .bloc4 img
+{
+height: 100px;
+width: 100%;
+}
+
+.bloc1 img, .bloc3 img
+{
+height: 260px;
+width: 100%;
+}
+
+#section2 figure img
+{
+    object-fit: cover;
+    object-position: center;
+}
+
+/*Figcaptions*/
+#activity figcaption
+{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/*Footer*/
+/*General*/
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#f1, #f2, #f3
+{
+    width: 33%;
+    margin: 20px 30px;
+}
+
+footer h2
+{
+    font-size: 1em;
+}
+
+
+
+
