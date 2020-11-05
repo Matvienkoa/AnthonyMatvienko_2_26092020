@@ -1,4 +1,4 @@
-/*Police perso*/
+/*==========================================Police perso=========================================*/
 @font-face
 {
     font-family: 'Raleway-Medium' ;
@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-/*éléments principaux de la page*/
+/*===================================éléments principaux de la page=============================*/
 body
 {
     font-family: 'Raleway-Regular', Arial, Helvetica, sans-serif;
@@ -34,7 +34,7 @@ h1, h2
     width: 80px;
 }
 
-/*Liens*/
+/*============================================Liens======================================*/
 #section1 a, #section2 a
 {
     outline: none;
@@ -43,7 +43,7 @@ h1, h2
     margin: auto;
 }
 
-/*Header*/
+/*===============================================Header=======================================*/
 header
 {
     display: flex;
@@ -53,29 +53,44 @@ header
     margin-bottom: 20px;
 }
 
-/*Menu*/
+/*--------------------------------Nav-----------------------------*/
+
+nav
+{
+    width: 300px;
+}
+
 nav ul
 {
     list-style-type: none;
+    padding: 0;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 nav li
 {
-    margin-right: 50px;
+    width: 33%;
+    text-align: center;
+    padding-top: 30px;
 }
 
 nav a
 {
+    width: 100%;
     text-decoration: none;
     color: black;
 }
 
-/*Trait au survol*/
-nav li :hover
+#a1
 {
+    color: #0065FC;
     border-top: 2px #0065FC solid;
-    padding-top: 20px;
+}
+
+#a1 a
+{
     color: #0065FC;
 }
 
@@ -85,7 +100,9 @@ nav li :hover
     font-weight: bold;
 }
 
-/*recherche*/
+/*=========================================Main================================*/
+
+/*---------------------------recherche---------------------------*/
 #search
 {
     display: flex;
@@ -109,7 +126,7 @@ nav li :hover
     font-weight: bold;
 }
 
-#button
+#buttondesktop
 {
     border: none;
     border-radius: 0px 15px 15px 0px;
@@ -119,7 +136,12 @@ nav li :hover
     font-weight: bold;
 }
 
-/*effet boutons recherche enlevé*/
+#buttonmobile
+{
+    display: none;
+}
+
+/*----------------------effet boutons recherche enlevé---------------------------*/
 input#button:focus
 {
     outline:none;
@@ -130,23 +152,23 @@ input#localisation:focus
     outline:none;
 }
 
-/*filtres*/
+/*----------------------------------filtres------------------------------------*/
 #filter
 {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
-/*mot filtre isolé*/
+/*-------------------------mot filtre isolé---------------------------------*/
 #descfilter
 {
     font-weight: bold;
     margin-right: 30px;
 }
 
-/*icone + contenu*/
+/*---------------------icone + contenu---------------------------------*/
 .completebutton
 {
     display: flex;
@@ -177,7 +199,7 @@ input#localisation:focus
     margin-right: 15px;
 }
 
-/*effet survol filtres*/
+/*-----------------------------effet survol filtres---------------------------------*/
 .completebutton:hover .icones 
 {
     color: white;
@@ -188,7 +210,7 @@ input#localisation:focus
     color: #0065FC;
 }
 
-/*info nbre logement*/
+/*---------------------------info nbre logement------------------------------*/
 #infolog
 {
     display: flex;
@@ -209,16 +231,17 @@ input#localisation:focus
     border-radius: 15px 15px;
 }
 
-/*section 1*/
-/*general*/
+/*=============================================section 1================================================*/
+
+/*--------------------------------general--------------------------------*/
 #section1
 {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px; 
+    margin-bottom: 40px; 
 }
 
-/*gestion des figures globale*/
+/*-------------------------gestion des figures globale-----------------------------*/
 
 figure
 {
@@ -238,7 +261,7 @@ figure
     font-weight: bold;
 }
 
-/*hebergements*/
+/*---------------------------------hebergements-------------------------------*/
 #housing
 {
     display: flex;
@@ -255,14 +278,14 @@ figure
     margin-bottom: 15px;
 }
 
-#more
+#housing #more
 {
     font-weight: bold;
     margin-left: 25px;
-    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
-/*cartes section hebergements*/
+/*---------------------------cartes section hebergements------------------------------*/
 #housing .cards
 {
     display: flex;
@@ -282,7 +305,7 @@ width: 150px;
 margin-bottom: 20px;
 }
 
-/*figcaption*/
+/*--------------------------------figcaption------------------------------------*/
 #housing figcaption
 {
     display: flex;
@@ -295,7 +318,7 @@ margin-bottom: 20px;
 #housing .price
 {
     margin-top: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
 }
 
 .price2
@@ -313,15 +336,15 @@ margin-bottom: 20px;
     color: #0065FC;
 }
 
-/*Aside*/
+/*----------------------------------------Aside----------------------------------------------*/
 #popular
 {
     background-color: #F2F2F2;
-    width: 270px;
+    width: 30%;
     border-radius: 20px 20px 20px 20px;
 }
 
-#popular h1
+#popular h2
 {
     display: flex;
     justify-content: space-between;
@@ -331,12 +354,12 @@ margin-bottom: 20px;
     margin-right: 25px;
 }
 
-/*cartes Aside*/
+/*------------------------------------cartes Aside------------------------------------*/
 #popular figure
 {
     display: flex;
     height: 80px;
-    width: 220px;
+    width: 80%;
     background-color: white;
     border: 4px white solid;
     border-radius: 20px 20px 20px 20px;
@@ -348,7 +371,7 @@ margin-bottom: 20px;
     width: 80px;
 }
 
-/*figcaption Aside*/
+/*-------------------------------figcaption Aside----------------------------------------*/
 #popular figcaption
 {
     display: flex;
@@ -361,7 +384,7 @@ margin-bottom: 20px;
 
 #popular .star
 {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #popular .price
@@ -369,9 +392,9 @@ margin-bottom: 20px;
     margin-top: 3px;
 }
 
-/*Section Activités*/
-/*Général*/
+/*====================================================Section2 Activités============================================*/
 
+/*-------------------------------Général----------------------------------*/
 #section2
 {
     margin-bottom: 50px;
@@ -394,7 +417,7 @@ margin-bottom: 20px;
     height: 47%;
 }
 
-/*Blocs*/
+/*-----------------------------------Blocs-----------------------------------------*/
 .bloc1, .bloc3, .figbloc2, .figbloc4
 {
     overflow: hidden;
@@ -427,7 +450,7 @@ width: 100%;
     object-position: center;
 }
 
-/*Figcaptions*/
+/*------------------------------------Figcaptions--------------------------------------*/
 #activity figcaption
 {
     font-weight: bold;
@@ -435,9 +458,9 @@ width: 100%;
     padding-left: 10px;
 }
 
-/*Footer*/
-/*General*/
+/*=====================================================Footer===================================================*/
 
+/*------------------------------------General---------------------------------------*/
 footer
 {
     display: flex;
@@ -457,270 +480,12 @@ footer h2
     font-size: 1em;
 }
 
-/*-----------------------------------------------Responsive-----------------------------------------------*/
+/*------------media intermediaire desktop medium-------------------*/
 
-/*Medium*/
-
-@media all and (max-device-width: 959px) and (min-device-width: 480px)
+@media screen and (min-width: 815px) and (max-width: 980px)
 {
-
     body
     {
-    width: auto;
-    }
-
-    header
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    #logo
-    {
-        margin-bottom: 10px;
-    }
-
-    #filter
-    {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        margin-bottom: 5px;
-    }
-
-    .completebutton
-    {
-        margin-bottom: 10px;
-    }
-
-    #section1
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #housing
-    {
-        margin-right: 10px;
-    }
-
-
-
-}
-
-/*Mobile*/
-
-@media all and (max-device-width: 479px)
-{
-
-    body
-    {
-        width: 100%;
-    }
-
-    header
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    #logo
-    {
-        width: 250px;
-        margin-left: 30px;
-    }
-
-    nav ul
-    {
-        font-size: 3em;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav li
-    {
-        margin-left: 20px;
-        padding-left: 100px;
-    }
-
-    #register
-    {
-        position: absolute;
-        top: 70px;
-        right: 40px;
-    }
-
-    /*============================Main===========================*/
-    main
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    main h1
-    {
-        flex: 1;
-        font-size: 3.5em;
-        margin: auto;
-        text-align: center;
-        width: 75%;
-        margin-bottom: 25px;
-    }
-
-    main h1 + p
-    {
-        flex: 1;
-        font-size: 2.5em;
-        margin: auto;
-        margin-left: 175px;
-        width: 75%;
-        margin-bottom: 25px;
-    }
-
-    /*========================section1========================*/
-    #section1
-    {
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-
-    /*=========================aside=========================*/
-    #popular
-    {
-      width: auto;
-      border-radius: 0;
-      margin-bottom: 30px;
-    }
-
-    #popular h1
-    {
-        font-size: 3em;
-        margin: 60px 50px 40px 50px;
-    }
-
-    /*-----------------------cartes-------------------------*/
-    #popular figure
-    {
-        width: 90%;
-        height: 350px;
-        border: 10px white solid;
-        border-radius: 40px 40px 40px 40px;
-        margin-bottom: 80px;
-        box-shadow: 0px 0px 20px #F2F2F2;
-    }
-
-    #popular figure img
-    {
-        width: 40%;
-        height: 100%;
-    }
-
-    #popular figure figcaption
-    {
-        font-size: 3em;
-        margin-left: 50px;
-        margin-top: 40px;
-    }
-
-    .price
-    {
-        padding-top: 20px;
-        padding-bottom: 60px;
-    }
-
-    /*============================Housing==================*/
-
-    #housing
-    {
-        width: auto;
-        background: none;
-    }
-
-    #housing h1
-    {
-        font-size: 3em;
-        margin: 60px 50px 40px 50px;
-    }
-
-    #housing .cards
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #housing figure
-    {
-        height: 450px;
-        width: 858px;
-        margin-bottom: 80px;
-        border: 10px white solid;
-        border-radius: 40px 40px 40px 40px;
-        box-shadow: 0px 0px 20px #F2F2F2;
-    }
-
-    #housing figure img
-    {
-        width: 100%;
-        height: 60%;
-    }
-
-    #housing figure figcaption
-    {
-        font-size: 3em;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-
-    #housing .price
-    {
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-
-    #more
-    {
-        font-size: 3em;
-        margin-left: 50px;
-    }
-
-    /*=========================section2=================*/
-
-    #section2
-    {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #section2 h1
-    {
-        font-size: 3em;
-        margin: 60px 50px 40px 50px;
-    }
-
-    #activity
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: auto;
     }
-
-    #activity .bloc1, #activity .bloc2
-    {
-        width: 100%;
-    }
-
-
-
-
-
 }
-

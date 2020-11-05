@@ -1,0 +1,71 @@
+/*===============General===========*/
+body
+{
+    width: auto;
+}
+
+header
+{
+    justify-content: space-between;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main h2, main p, main #search
+{
+    justify-content: center;
+    text-align: center;
+}
+
+/*---------------------------------------Filter------------------------------*/
+#filter
+{
+    flex-wrap: wrap;
+}
+
+.completebutton, #descfilter
+{
+    margin-bottom: 15px;
+}
+
+/*--------------------------------------Section1---------------------------*/
+#section1
+{
+    flex-direction: column-reverse;
+}
+
+#popular
+{
+    width: auto;
+    margin-bottom: 30px;
+}
+
+#popular .cards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#popular figure
+{
+    width: 190px;
+    margin-bottom: 20px;
+}
+
+#housing
+{
+    width: auto;
+}
+
+#activity figcaption
+{
+    padding-top: 2px;
+}
+    
+

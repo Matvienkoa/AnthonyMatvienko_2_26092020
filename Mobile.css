@@ -1,0 +1,301 @@
+/*========================General====================*/
+
+body
+{
+    width: auto;
+}
+
+/*=========================Header=====================*/
+
+header
+{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+#logo
+{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+/*-------------------------Nav---------------------*/
+
+nav
+{
+    width: 100%;
+}
+
+nav ul
+{
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+
+nav ul li
+{
+    margin: 0;
+    width: 50%;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 0;
+}
+
+#a1
+{
+    border-top: none;
+    border-bottom: 2px #0065FC solid;
+    padding-bottom: 20px;
+}
+
+#a2
+{
+    border-bottom: 2px #F2F2F2 solid;
+    padding-bottom: 20px;
+}
+
+#register
+{
+    width: 80px;
+    font-size: 1.3em;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+
+
+/*==========================main==========================*/
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main h2
+{
+    width: 85%;
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+
+main p
+{
+    width: 85%;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+/*----------------------search--------------------*/
+#search
+{
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#buttondesktop
+{
+    display: none;
+}
+
+#map
+{
+    text-align: center;
+}
+
+#buttonmobile
+{
+    display: block;
+    width: 45px;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 12px 12px 12px 12px;
+    color: white;
+}
+
+/*---------------------filter------------------*/
+#filter
+{
+    width: 95%;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+.content
+{
+padding-top: 18px;
+}
+
+.completebutton
+{
+    margin-bottom: 10px;
+}
+
+#infolog
+{
+    width: 95%;
+}
+
+#infolog p
+{
+    padding-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/*====================================Section 1=========================*/
+
+#section1
+{
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------Aside------------------------------*/
+
+#popular
+{
+    width: auto;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+#popular figure
+{
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+#popular figure img
+{
+    height: auto;
+    width: 40%;
+}
+
+#popular figure figcaption
+{
+    width: auto;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+/*------------------------------------Housing--------------------------------*/
+
+#housing
+{
+    width: auto;
+    background: none;
+}
+
+#housing .cards a
+{
+    width: 80%;
+}
+
+#housing .cards a figure
+{
+    width: auto;
+    box-shadow: 0px 0px 10px #F2F2F2;
+    height: 160px;
+    margin-bottom: 15px;
+}
+
+#housing .cards a figure img
+{
+    height: 55%;
+}
+
+#housing figcaption
+{
+    font-size: 1.1em;
+}
+
+/*=================================Section2=================================*/
+
+#section2
+{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#section2 #activity
+{
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+#section2 h1
+{
+    margin-left: 25px;
+    margin-bottom: 18px;
+}
+
+.bloc1, .bloc2, .bloc3, .bloc4
+{
+    width: 80%;
+    height: auto;
+}
+
+.bloc1, .figbloc2, .bloc3, .figbloc4
+{
+    margin-bottom: 15px;
+}
+
+.figbloc2, .figbloc4
+{
+    height: auto;
+}
+
+.bloc1 figure, .figbloc2 figure, .bloc3 figure, .figbloc4 figure
+{
+    height: 160px;
+}
+
+#activity figure img
+{
+    height: 75%;
+}
+
+/*==========================Footer=======================*/
+
+footer
+{
+    flex-direction: column;
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+#f1, #f2, #f3
+{
+    width: auto;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+#f1
+{
+    margin-top: 30px;
+}
+
+#f3
+{
+    margin-bottom: 30px;
+}
+
+
+
+
