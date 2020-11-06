@@ -97,9 +97,9 @@ main p
 /*----------------------search--------------------*/
 #search
 {
-    border-top: 1px #F2F2F2 solid;
-    border-bottom: 1px #F2F2F2 solid;
-    border-radius: 15px 15px 15px 15px;
+    border-top: 2px #F2F2F2 solid;
+    border-bottom: 2px #F2F2F2 solid;
+    border-radius: 20px 20px 20px 20px;
 }
 
 #buttondesktop
@@ -122,12 +122,23 @@ main p
     color: white;
 }
 
+#localisation
+{
+    border: none;
+}
+
 /*---------------------filter------------------*/
 #filter
 {
     width: 95%;
     flex-wrap: wrap;
     margin-bottom: 0px;
+}
+
+.icones
+{
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .content
@@ -137,8 +148,10 @@ padding-top: 18px;
 
 .completebutton
 {
+    width: auto;
     margin-bottom: 10px;
 }
+
 
 #infolog
 {
