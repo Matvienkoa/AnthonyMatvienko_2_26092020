@@ -203,11 +203,13 @@ input#localisation:focus
 .completebutton:hover .icones 
 {
     color: white;
+    cursor: pointer;
 }
 
 .completebutton:hover .content
 {
     color: #0065FC;
+    cursor: pointer;
 }
 
 /*---------------------------info nbre logement------------------------------*/
